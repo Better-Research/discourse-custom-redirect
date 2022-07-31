@@ -4,5 +4,5 @@
 # authors: Abdullah Talayhan
 
 Discourse::Application.routes.append do
-    get '/:year/:id', to: redirect('/tag/%{year}-%{id}') , constraints: {year: /[0-9+]/, id: /[0-9+]/}
+    get '/:year/:id', to: redirect('/tag/%{year}-%{id}') , constraints: {year: /[0-9]+/, id: /[0-9]+/}
 end
